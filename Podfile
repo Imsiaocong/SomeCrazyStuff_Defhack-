@@ -28,6 +28,8 @@ pod 'AWSSQS'
 pod "TextFieldEffects"
 pod 'PopupDialog', '~> 0.5'
 pod 'SwiftyJSON'
+pod 'SwiftHTTP', '~> 2.0.0'
+pod 'Alamofire', '~> 4.0'
 
 
   target 'SomeCrazyStuffTests' do

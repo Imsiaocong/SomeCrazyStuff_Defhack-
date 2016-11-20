@@ -21,6 +21,8 @@
 		865C589F1DE0EA2C00747DA5 /* HackathonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865C589E1DE0EA2C00747DA5 /* HackathonViewController.swift */; };
 		865C58A21DE0EAB700747DA5 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865C58A11DE0EAB700747DA5 /* FlowLayout.swift */; };
 		865C58A41DE0EB0000747DA5 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865C58A31DE0EB0000747DA5 /* CustomCollectionViewCell.swift */; };
+		86AAF9631DE1350600E047C5 /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86AAF9621DE1350600E047C5 /* SwiftHTTP.framework */; };
+		86B06F021DE136E20059E0DE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B06F011DE136E20059E0DE /* Alamofire.framework */; };
 		86BA13261DE0F63500851900 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BA13251DE0F63500851900 /* SwiftyJSON.framework */; };
 		86BA13291DE0FD2000851900 /* HKDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BA13281DE0FD2000851900 /* HKDetailViewController.swift */; };
 		86BA132B1DE1053E00851900 /* PopupDialog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BA132A1DE1053E00851900 /* PopupDialog.framework */; };
@@ -79,6 +81,8 @@
 		865C589E1DE0EA2C00747DA5 /* HackathonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HackathonViewController.swift; sourceTree = "<group>"; };
 		865C58A11DE0EAB700747DA5 /* FlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
 		865C58A31DE0EB0000747DA5 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		86AAF9621DE1350600E047C5 /* SwiftHTTP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftHTTP.framework; path = "Pods/../build/Debug-iphoneos/SwiftHTTP/SwiftHTTP.framework"; sourceTree = "<group>"; };
+		86B06F011DE136E20059E0DE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		86BA13251DE0F63500851900 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/SomeCrazyStuff-ftrznddmdoipuqbbcbkvjtqdldmm/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		86BA13281DE0FD2000851900 /* HKDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKDetailViewController.swift; sourceTree = "<group>"; };
 		86BA132A1DE1053E00851900 /* PopupDialog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PopupDialog.framework; path = "../../Library/Developer/Xcode/DerivedData/SomeCrazyStuff-ftrznddmdoipuqbbcbkvjtqdldmm/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework"; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86B06F021DE136E20059E0DE /* Alamofire.framework in Frameworks */,
+				86AAF9631DE1350600E047C5 /* SwiftHTTP.framework in Frameworks */,
 				86BA132B1DE1053E00851900 /* PopupDialog.framework in Frameworks */,
 				86BA13261DE0F63500851900 /* SwiftyJSON.framework in Frameworks */,
 				865C58981DE0E2E300747DA5 /* TextFieldEffects.framework in Frameworks */,
@@ -124,6 +130,8 @@
 		18FA90E8DC6740E1EE53D6D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				86B06F011DE136E20059E0DE /* Alamofire.framework */,
+				86AAF9621DE1350600E047C5 /* SwiftHTTP.framework */,
 				86BA132A1DE1053E00851900 /* PopupDialog.framework */,
 				86BA13251DE0F63500851900 /* SwiftyJSON.framework */,
 				865C58971DE0E2E300747DA5 /* TextFieldEffects.framework */,
@@ -677,6 +685,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PGC62Z29HJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SwiftHTTP",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
+				);
 				INFOPLIST_FILE = SomeCrazyStuff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DiWang.SomeCrazyStuff;
@@ -691,6 +704,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PGC62Z29HJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SwiftHTTP",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
+				);
 				INFOPLIST_FILE = SomeCrazyStuff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DiWang.SomeCrazyStuff;

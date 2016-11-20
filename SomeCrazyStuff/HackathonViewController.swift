@@ -8,6 +8,8 @@
 
 import UIKit
 import SwiftyJSON
+import SwiftHTTP
+import Alamofire
 
 
 class HackathonViewController: UIViewController {
@@ -35,7 +37,7 @@ class HackathonViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         drawCollectionView()
-        get()
+        getData()
     }
     
     func drawCollectionView() {
@@ -68,22 +70,21 @@ class HackathonViewController: UIViewController {
         ///
         //
     }
-    
-    func get() {
-        let url = "hackteams.c6p7kpyzcymg.us-east-1.rds.amazonaws.com"
-        if let jsonData = NSData(contentsOf: NSURL(string: url)! as URL) {
-            let json = JSON(data: jsonData as Data)
-            print(json)
-        } else {
-            print("Didn't get nothing from url.")
+
+    func getData() {
+        
+        Alamofire.request("https://hackteams.c6p7kpyzcymg.us-east-1.rds.amazonaws.com").response { response in
+            print("Request: \(response.request)")
+            print("Response: \(response.response)")
+            print("Error: \(response.error)")
+            
+            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                print("Data: \(utf8Text)")
+            }
         }
     }
-    
-    
-
 
 }
-
 
 extension HackathonViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -121,3 +122,4 @@ extension HackathonViewController: UICollectionViewDelegate, UICollectionViewDat
     }
     
 }
+//???: How to parse data from

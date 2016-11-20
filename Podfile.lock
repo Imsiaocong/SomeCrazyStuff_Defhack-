@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.0.1)
   - AWSAutoScaling (2.4.12):
     - AWSCore (= 2.4.12)
   - AWSCloudWatch (2.4.12):
@@ -35,10 +36,12 @@ PODS:
   - AWSSQS (2.4.12):
     - AWSCore (= 2.4.12)
   - PopupDialog (0.5.0)
+  - SwiftHTTP (2.0.2)
   - SwiftyJSON (3.1.1)
   - TextFieldEffects (1.3.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.0)
   - AWSAutoScaling
   - AWSCloudWatch
   - AWSCognito
@@ -57,10 +60,12 @@ DEPENDENCIES:
   - AWSSNS
   - AWSSQS
   - PopupDialog (~> 0.5)
+  - SwiftHTTP (~> 2.0.0)
   - SwiftyJSON
   - TextFieldEffects
 
 SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   AWSAutoScaling: 9414a14d57e027794582e04769d222a26a630067
   AWSCloudWatch: b2c61666bfd0bec33bd013ac36b4b825aee7aee2
   AWSCognito: 3c897210f6bfbb04585332388dff2036a3f39540
@@ -80,9 +85,10 @@ SPEC CHECKSUMS:
   AWSSNS: 758ecea491002c9064f3771a853ca9250b93ccc0
   AWSSQS: e460e57060ad208f44f6dab0b2c85787a5bd3f68
   PopupDialog: 9890441b81105b9076757af2afe2b037be682f3e
+  SwiftHTTP: faa1a5f7670568ffc9361898229dbe84a6088468
   SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
   TextFieldEffects: ef594746f17997c813e07633f8ae5acaf9b04f27
 
-PODFILE CHECKSUM: 95bfdff42952ed42b8081cb5d2da175a007eb47a
+PODFILE CHECKSUM: 488ba6c152e835494cf2bb3c0102daef4570fae6
 
 COCOAPODS: 1.1.1
