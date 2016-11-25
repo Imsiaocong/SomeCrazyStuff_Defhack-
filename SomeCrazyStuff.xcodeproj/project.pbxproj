@@ -26,6 +26,7 @@
 		86BA13261DE0F63500851900 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BA13251DE0F63500851900 /* SwiftyJSON.framework */; };
 		86BA13291DE0FD2000851900 /* HKDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BA13281DE0FD2000851900 /* HKDetailViewController.swift */; };
 		86BA132B1DE1053E00851900 /* PopupDialog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BA132A1DE1053E00851900 /* PopupDialog.framework */; };
+		86E1865D1DE7DE0E00B001AE /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E1865C1DE7DE0E00B001AE /* Team.swift */; };
 		F56D3898B129EF9AA0683AE8 /* Pods_SomeCrazyStuffTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6FB74B29D63A4FD0F18261 /* Pods_SomeCrazyStuffTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		86BA13251DE0F63500851900 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/SomeCrazyStuff-ftrznddmdoipuqbbcbkvjtqdldmm/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		86BA13281DE0FD2000851900 /* HKDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKDetailViewController.swift; sourceTree = "<group>"; };
 		86BA132A1DE1053E00851900 /* PopupDialog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PopupDialog.framework; path = "../../Library/Developer/Xcode/DerivedData/SomeCrazyStuff-ftrznddmdoipuqbbcbkvjtqdldmm/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework"; sourceTree = "<group>"; };
+		86E1865C1DE7DE0E00B001AE /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		A4D5C74F3644A445A5266102 /* Pods-SomeCrazyStuff.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomeCrazyStuff.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SomeCrazyStuff/Pods-SomeCrazyStuff.debug.xcconfig"; sourceTree = "<group>"; };
 		A57E36BE9E90A99B4F4E9E00 /* Pods-SomeCrazyStuffUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomeCrazyStuffUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SomeCrazyStuffUITests/Pods-SomeCrazyStuffUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AAD1CF26FAC2418260D48A05 /* Pods-SomeCrazyStuffUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomeCrazyStuffUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SomeCrazyStuffUITests/Pods-SomeCrazyStuffUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				865C58A11DE0EAB700747DA5 /* FlowLayout.swift */,
+				86E1865C1DE7DE0E00B001AE /* Team.swift */,
 			);
 			name = Models;
 			path = SomeCrazyStuff;
@@ -529,6 +532,7 @@
 				86BA13291DE0FD2000851900 /* HKDetailViewController.swift in Sources */,
 				865C58A41DE0EB0000747DA5 /* CustomCollectionViewCell.swift in Sources */,
 				86329CAE1DE0C8C80057FB21 /* AuthenticationVC.swift in Sources */,
+				86E1865D1DE7DE0E00B001AE /* Team.swift in Sources */,
 				865C58A21DE0EAB700747DA5 /* FlowLayout.swift in Sources */,
 				86329CAC1DE0C8C80057FB21 /* AppDelegate.swift in Sources */,
 				865C589A1DE0E3BF00747DA5 /* LoginProcess.swift in Sources */,

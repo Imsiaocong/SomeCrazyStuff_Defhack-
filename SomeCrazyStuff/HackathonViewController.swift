@@ -19,15 +19,7 @@ class HackathonViewController: UIViewController {
     
     @IBOutlet weak var introductionText: UITextView!
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    let target = Team.get()
     
     fileprivate var viewRect: CGRect!
     fileprivate var cellIdentifier = "cellIdentifier"
@@ -116,7 +108,9 @@ extension HackathonViewController: UICollectionViewDelegate, UICollectionViewDat
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "identifier_2" {
             let viewController = segue.destination as! HKDetailViewController
-            
+            for i in 0..<target.count{
+            viewController.pickerDataSource.append(target[i])
+            }
         }
         
     }
